@@ -1,5 +1,5 @@
 {
-  "name": "CHANGE THIS : Extension boilerplate",
+  "name": "Netflix TV: Watch a TV-like service based on Netflix",
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "This extension was created with the awesome extensionizr.com",
@@ -14,32 +14,30 @@
     "page": "src/bg/background.html",
     "persistent": true
   },
-  "page_action": {
+/*  "page_action": {
     "default_icon": "icons/icon19.png",
     "default_title": "page action demo",
     "default_popup": "src/page_action/page_action.html"
-  },
+  },*/
   "permissions": [
     "cookies",
     "notifications",
     "tabs"
   ],
+   "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_popup": "src/page_action/page_action.html",
+    "default_title": "Click here!"
+  },
   "content_scripts": [
     {
-      "matches": [
-        "https://www.google.com/*"
-      ],
-      "css": [
-        "src/inject/inject.css"
-      ]
-    },
+      "matches": ["*://netflix.com/browse", "*://www.netflix.com/browse"],
+      "css": ["src/inject/inject.css"],
+      "js": ["js/jquery/jquery.min.js", "src/inject/inject.js"]
+    }, 
     {
-      "matches": [
-        "https://www.google.com/*"
-      ],
-      "js": [
-        "src/inject/inject.js"
-      ]
+      "matches": ["*://netflix.com/browse/genre/*", "*://www.netflix.com/browse/genre/*"],
+      "js": ["js/jquery/jquery.min.js", "src/inject/injectPlay.js"]
     }
   ]
 }
