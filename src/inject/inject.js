@@ -15,7 +15,6 @@ chrome.extension.sendMessage({}, function(response) {
 
 
 function appendChannels(){
-	console.log(jQuery);
 	$after = (".billboard-row");
 	$div = $(div);
 	$(div).insertAfter($after);

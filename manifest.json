@@ -14,30 +14,32 @@
     "page": "src/bg/background.html",
     "persistent": true
   },
-/*  "page_action": {
+  "page_action": {
     "default_icon": "icons/icon19.png",
     "default_title": "page action demo",
     "default_popup": "src/page_action/page_action.html"
-  },*/
+  },
   "permissions": [
     "cookies",
     "notifications",
     "tabs"
   ],
+/*
    "browser_action": {
     "default_icon": "icons/icon19.png",
     "default_popup": "src/page_action/page_action.html",
     "default_title": "Click here!"
   },
+  */
   "content_scripts": [
     {
-      "matches": ["*://netflix.com/browse", "*://www.netflix.com/browse"],
+      "matches": ["*://netflix.com/browse", "*://www.netflix.com/browse"], //It does not work with "/" at the end of the url, got to fix this
       "css": ["src/inject/inject.css"],
       "js": ["js/jquery/jquery.min.js", "src/inject/inject.js"]
     }, 
     {
       "matches": ["*://netflix.com/browse/genre/*", "*://www.netflix.com/browse/genre/*"],
-      "js": ["js/jquery/jquery.min.js", "src/inject/injectPlay.js"]
+      "js": ["src/inject/injectPlay.js"]
     }
   ]
 }
