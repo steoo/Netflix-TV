@@ -24,18 +24,11 @@
     "notifications",
     "tabs"
   ],
-/*
-   "browser_action": {
-    "default_icon": "icons/icon19.png",
-    "default_popup": "src/page_action/page_action.html",
-    "default_title": "Click here!"
-  },
-  */
   "content_scripts": [
     {
       "matches": ["*://netflix.com/browse", "*://www.netflix.com/browse"], //It does not work with "/" at the end of the url, got to fix this
       "css": ["src/inject/inject.css"],
-      "js": ["js/jquery/jquery.min.js", "src/inject/inject.js"]
+      "js": ["js/jquery/jquery.min.js", "build/inject.min.js"]
     }, 
     {
       "matches": ["*://netflix.com/browse/genre/*", "*://www.netflix.com/browse/genre/*"],
