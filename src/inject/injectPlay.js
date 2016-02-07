@@ -1,5 +1,15 @@
+/**
+ *  This code needs to be re-writed in a OOP fashion.
+ *
+ *  Basically the doTheTrick function is injected inside the actual page
+ *  to refer the window object and retrieve the information we need to deal with.
+ *  We need to head append the script because the extension creates another window object
+ *  which is different from the actual page one in fact if we try to retrieve the
+ *  window.netflix.falkorCache.videos
+ *  object in the windows it will result undefined.
+ * */
 
-var string = doTheTrick.toString();
+ var string = doTheTrick.toString();
 var elt = document.createElement("script");
 elt.innerHTML = "(" + string + ")()";
 document.head.appendChild(elt);
