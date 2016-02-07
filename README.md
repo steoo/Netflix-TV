@@ -22,5 +22,8 @@ Of course, contribution and enhancement from all of you :)
 
 Really simple: fork(), create branch, test it in the browser, always remember to put some documentation.
 
+##License
+
+MIT: https://github.com/yabwe/medium-editor/blob/master/LICENSE
 
 Have fun and contribute :)
