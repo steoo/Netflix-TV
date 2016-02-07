@@ -18,4 +18,9 @@ You can choose between one of the channels present in the list, wait for the ext
 
 Of course, contribution and enhancement from all of you :)
 
+##How to contribute?
+
+Really simple: fork(), create branch, test it in the browser, always remember to put some documentation.
+
+
 Have fun and contribute :)
