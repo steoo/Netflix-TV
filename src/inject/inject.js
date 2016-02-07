@@ -1,14 +1,19 @@
-import categories from "../data/categories.js";
-import channel from "../classes/channel.js";
+import model from "../classes/model.js";
+import Controller from "../classes/controller.js";
+import { ChannelsContainer } from "../classes/channel.js";
 
-console.log("Availables:", categories);
+let channelsContainer = new ChannelsContainer(".billboard-row");
+let controller = new Controller(channelsContainer, model);
 
 chrome.extension.sendMessage({}, function (response) {
     var readyStateCheckInterval = setInterval(function () {
         if (document.readyState === "complete") {
             clearInterval(readyStateCheckInterval);
 
-            appendChannels();
+            //appendChannels();
+            console.log(model);
+            channelsContainer.render();
+            controller.renderChannels();
         }
     }, 10);
 });

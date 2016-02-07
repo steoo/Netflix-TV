@@ -1,9 +1,24 @@
-let categories = {
-    "action": 1365,
-    "comedy": 6548,
-    "drama": 5763,
-    "sci-fi": 1492,
-    "romantic": 8883
-};
+let categories = [
+    {
+        name: "action",
+        id: 1365
+    },
+    {
+        name: "comedy",
+        id: 6548
+    },
+    {
+        name: "drama",
+        id: 5763
+    },
+    {
+        name: "sci-fi",
+        id: 1492
+    },
+    {
+        name: "romantic",
+        id: 8883
+    }
+];
 
 export default categories;
