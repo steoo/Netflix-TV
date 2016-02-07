@@ -24,6 +24,6 @@ Really simple: fork(), create branch, test it in the browser, always remember to
 
 ##License
 
-MIT: https://github.com/yabwe/medium-editor/blob/master/LICENSE
+MIT: https://github.com/steoo/Netflix-TV/blob/master/LICENSE
 
 Have fun and contribute :)
