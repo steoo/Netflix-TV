@@ -26,11 +26,13 @@ Really simple: fork(), create branch, test it in the browser, always remember to
 ##Build instructions
 In the meantime that we don't have a build.sh yet, these is the build routine;
 
-1 - `npm install` to install the whole depencies ( especially `dev` ones )
+1 - Clone or download the repository
 
-2 - `gulp build-inject` as long as we do not have a `default` task yet and the `injectPlay` is not ES6 yet.
+2 - `npm install` to install the whole depencies ( especially `dev` ones )
 
-3 - Load the extension as "not a package"
+3 - `gulp build-inject` (as long as we do not have a `default` task yet and the `src/injectPlay.js` is not ES6 yet.)
+
+4 - Load the extension as unpacked ( https://developer.chrome.com/extensions/getstarted#unpacked )
 
 ##License
 
