@@ -20,7 +20,17 @@ Of course, contribution and enhancement from all of you :)
 
 ##How to contribute?
 
-Really simple: fork(), create branch, test it in the browser, always remember to put some documentation.
+Really simple: fork(), create branch, test it in the browser, always remember to put some documentation, make a PR.
+
+
+##Build instructions
+In the meantime that we don't have a build.sh yet, these is the build routine;
+
+1 - `npm install` to install the whole depencies ( especially `dev` ones )
+
+2 - `gulp build-inject` as long as we do not have a `default` task yet and the `injectPlay` is not ES6 yet.
+
+3 - Load the extension as "not a package"
 
 ##License
 
