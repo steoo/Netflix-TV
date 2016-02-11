@@ -3,7 +3,7 @@ The description says: "a chrome extension to play random netflix movie based on 
 
 ##So why Netflix TV?
 
-Let's start from the beginning: my brother told me that sometimes he don't want to choose between tons of films that are in the netflix catalogue
+Let's start from the beginning: my brother told me that sometimes he doesn't want to choose between tons of films that are in the netflix catalogue
  but instead have someone who can randomly choose one for him and that's why he called it **NetflixTV**.
  Like in television you pick a Channel and see what's going on, why can't we do the same with Netflix?
 
